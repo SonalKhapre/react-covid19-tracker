@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+ul{
+    width: 100vw; height: auto;
+    margin:auto ;
+    display: flex;
+   text-align: center;
+   flex-direction: row;
+   justify-content: space-around;
+   -ms-flex-align: center;
+   flex-wrap: wrap;
+   transition: all 0.2 linear;
+
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li{
+    list-style: none;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+    font-size: 50px;
+    flex: 1 1 200px;
+    
+    
+}
+span{
+    font-size:medium;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.rec{
+    background-color: #68FF00;
+    box-shadow: 20px 20px 50px grey;
+}
+.rec:hover{
+    background-color: #62e80a ; 
+    opacity: 0.9, 0.8, 0.7 ;
+}
+.death{
+    background-color: #FF005C;
+    box-shadow: 20px 20px 50px grey;
+    
+}
+.death:hover{
+    background-color:#e3105d ; 
+    opacity: 0.9, 0.8, 0.7 ;
+}
+.active{
+    background-color: #13F4EF;
+     box-shadow: 20px 20px 50px grey;
+}
+.active:hover{
+    background-color:#0ee6e2 ; 
+    opacity: 0.9, 0.8, 0.7 ;
+}
+.con{
+    background-color: #006FFF;
+    box-shadow: 20px 20px 50px grey;
+} 
+.con:hover{
+    background-color:#1d69cd ; 
+    opacity: 0.9, 0.8, 0.7 ;
 }
 
-.App-link {
-  color: #61dafb;
+ .secP{
+ text-shadow: 5px 5px 5px black;
+ color: white;
+ font-weight: bold;
+ padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section h2{
+    display: block;
+    background-color: #FAFF00;
+    color: black;
+    box-shadow: 20px 20px 80px gray;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    ul{
+        display: flex;
+       text-align: center;
+       flex-direction: row;
+       flex-wrap: wrap; 
+       align-items: center;
+       justify-content: center;
+        
+    }
+  
 }
